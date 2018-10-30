@@ -1,0 +1,8 @@
+body {
+  background-color: #212121;
+  font-family: Arial;
+  margin: 0;
+}
+* {
+    box-sizing: border-box;
+  }

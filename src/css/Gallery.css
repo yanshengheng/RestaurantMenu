@@ -1,19 +1,11 @@
-body {
-  font-family: Arial;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
+.mySlides img {
   vertical-align: middle;
+  z-index: 2;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  position: relative;
+  position: relative
 }
 
 /* Hide the images by default */
