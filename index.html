@@ -10,7 +10,7 @@
 <body>
 <!-- Navbar -->
 <div id="navbar">
-  <a href="#home">Home</a>
+  <a href="#">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
 </div>
@@ -90,15 +90,15 @@
     </div>
   </figcaption><a href="https://s3-us-west-2.amazonaws.com/"></a>
 </figure>
-<figure class="snip1418 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample96.jpg" alt="sample96"/>
-  <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
+<figure class="snip1418"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample96.jpg" alt="sample96"/>
+  <div class="add-to-cart"> <i class="ion-android-add"></i><button>Add to Cart</button></div>
   <figcaption>
     <h3>Kurie Secco</h3>
     <p>If you do the job badly enough, sometimes you don't get asked to do it again. </p>
     <div class="price">
-      <s>$24.00</s>$19.00
+      <p>$24.00</p>
     </div>
-  </figcaption><a id="product2 "></a>
+  </figcaption><a id="product2"></a>
 </figure>
 <figure class="snip1418"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample92.jpg" alt="sample92"/>
   <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
@@ -141,7 +141,40 @@
   </figcaption><a href="#"></a>
 </figure>
 
+<!-- Add item to Shopping cart -->
+<div class="shoppingCart">
+<div class="simpleCart_items" ></div><br />
+	SubTotal: <span id="simpleCart_total" class="simpleCart_total"></span> <br />
+	Tax Rate: <span id="simpleCart_taxRate" class="simpleCart_taxRate"></span> <br />
+	Tax: <span id="simpleCart_tax" class="simpleCart_tax"></span> <br />
+	Shipping: <span id="simpleCart_shipping" class="simpleCart_shipping"></span> <br />
+	-----------------------------<br />
+	Final Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span> <br />
+
+<a href="javascript:;" class="simpleCart_checkout">checkout</a>
+</div>
+<!-- simpleCart js-->
+<script>
+  !window.QUnit && document.write('<script src="src/js/qunit.js"><\/script>')
+</script>
+<script>
+	if( QUnit.urlParams.lib && QUnit.urlParams.ver ){
+		document.write('<script src="https://ajax.googleapis.com/ajax/libs/'+ 
+					QUnit.urlParams.lib + '/' + 
+					QUnit.urlParams.ver + '/' + 
+					QUnit.urlParams.lib + '.js"><\/script>');
+	} else {
+		document.write('<script src="src/js/jquery.1.6.1.min.js"><\/script>');
+	}
+	if( QUnit.urlParams.commit ){
+		document.write('<script src="src/js/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/simpleCart.js"><\/script>');
+} else {
+		document.write('<script src="src/js/simpleCart.js"><\/script>');
+}
+</script>
+<!--End of simpleCart js-->
 <script src="src/js/Nav.js"></script>
 <script src="src/js/Gallery.js"></script>
+<script src="src/js/Card.js"></script>
 </body>
 </html>
