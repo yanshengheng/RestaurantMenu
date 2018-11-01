@@ -1,6 +1,6 @@
 .mySlides img {
   vertical-align: middle;
-  z-index: 2;
+ 
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -11,6 +11,7 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
+  z-index: 2;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
